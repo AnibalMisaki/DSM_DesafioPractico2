@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8F0FF"
+    tools:context=".ui.client.HomeActivity">
+
+    <LinearLayout
+        android:background="#6874E8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6874E8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bungee_regular"
+            android:text="Bienvenido"
+            android:textColor="#fff"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="45dp"
+            android:fontFamily="@font/antic_regular"
+            android:text="User"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+
+            <Button
+                android:id="@+id/btnCarros"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#392759"
+                android:text="Automoviles" />
+
+            <Button
+                android:id="@+id/btnFav"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="#8C1818"
+                android:text="Favoritos" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
