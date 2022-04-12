@@ -11,6 +11,7 @@ import sv.com.udb.prueba.R;
 import sv.com.udb.prueba.databinding.ActivityHomeBinding;
 import sv.com.udb.prueba.ui.client.automovil.AutoMovilActivity;
 import sv.com.udb.prueba.ui.client.favoritos.FavoritosActivity;
+import sv.com.udb.prueba.ui.login.LoginActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -30,11 +31,16 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         binding.btnCarros.setOnClickListener(this::btnCarrosListener);
         binding.btnFav.setOnClickListener(this::btnFavListener);
+        binding.btnLogout.setOnClickListener((this::btnLogOutListener));
     }
 
     private void btnCarrosListener(View view){
         Intent i = new Intent(this, AutoMovilActivity.class);
         i.putExtra("userId",userId);
+        startActivity(i);
+    }
+    private void btnLogOutListener(View view){
+        Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
     }
 

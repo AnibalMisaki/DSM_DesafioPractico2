@@ -19,26 +19,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#6874E8"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+
             android:fontFamily="@font/bungee_regular"
             android:text="Bienvenido"
             android:textColor="#fff"
             android:textSize="34sp" />
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="47dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/logout"
+                android:fontFamily="@font/bungee_regular"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="25dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="45dp"
-            android:fontFamily="@font/antic_regular"
-            android:text="User"
-            android:textColor="#fff"
-            android:textSize="24sp" />
         </LinearLayout>
 
 

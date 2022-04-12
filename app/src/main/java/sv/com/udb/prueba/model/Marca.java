@@ -6,13 +6,15 @@ import com.j256.ormlite.table.DatabaseTable;
 import java.util.Objects;
 
 @DatabaseTable(tableName = "marcas")
-public class Marca {
+public class  Marca {
 
     @DatabaseField(id = true,canBeNull = false)
     private Integer id;
 
     @DatabaseField
     private String nombre;
+
+    public Marca(){}
 
     public Marca(String nombre) {
         this.nombre = nombre;
